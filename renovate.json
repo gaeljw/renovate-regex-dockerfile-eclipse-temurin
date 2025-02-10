@@ -26,5 +26,6 @@
       "versioning": "ubuntu",
       "additionalBranchPrefix": "variant-"
     }
-  ]
+  ],
+  "ignorePresets": ["workarounds:javaLTSVersions"]
 }
