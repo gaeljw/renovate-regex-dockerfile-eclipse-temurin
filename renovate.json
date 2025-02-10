@@ -16,8 +16,14 @@
         "depNameTemplate": "eclipse-temurin-variant",
         "packageNameTemplate": "eclipse-temurin",
         "versioningTemplate": "ubuntu",
-        "datasourceTemplate": "docker",
-        "autoReplaceStringTemplate": "FROM eclipse-temurin:21.0.5_11-jre-{{{newValue}}}"
+        "datasourceTemplate": "docker"
       }
-    ]
+    ],
+    "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["eclipse-temurin-variant"],
+      "versioning": "ubuntu"
+    }
+  ]
 }
