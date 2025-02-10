@@ -23,7 +23,8 @@
     {
       "matchDatasources": ["docker"],
       "matchDepNames": ["eclipse-temurin-variant"],
-      "versioning": "ubuntu"
+      "versioning": "ubuntu",
+      "additionalBranchPrefix": "variant-"
     }
   ]
 }
