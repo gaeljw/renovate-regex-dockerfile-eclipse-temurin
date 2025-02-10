@@ -12,7 +12,7 @@
         "matchStrings": [
           "FROM eclipse-temurin:(?<currentValue>.*)"
         ],
-        "extractVersionTemplate": "^.*-jre-(?<version>.*)$",
+        "extractVersionTemplate": "^21.0.5_11-jre-(?<version>.*)$",
         "depNameTemplate": "eclipse-temurin-variant",
         "packageNameTemplate": "eclipse-temurin",
         "versioningTemplate": "ubuntu",
