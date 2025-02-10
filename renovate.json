@@ -3,13 +3,19 @@
   "extends": [
     "config:recommended"
   ],
-  "regexManagers": [
-    {
-      "fileMatch": ["(^|/)Dockerfile$"],
-      "matchStrings": ["FROM (?<depName>.*):.*-jre-(?<currentValue>.*)"],
-      "extractVersionTemplate": "^.*-jre-(?<version>.*)$",
-      "versioningTemplate": "ubuntu",
-      "datasourceTemplate": "docker"
-    }
-  ]
+  "customManagers": [
+      {
+        "customType": "regex",
+        "fileMatch": [
+          "(^|/)Dockerfile$"
+        ],
+        "matchStrings": [
+          "FROM (?<depName>.*):.*-jre-(?<currentValue>.*)"
+        ],
+        "extractVersionTemplate": "^.*-jre-(?<version>.*)$",
+        "versioning": null,
+        "versioningTemplate": "ubuntu",
+        "datasourceTemplate": "docker"
+      }
+    ]
 }
