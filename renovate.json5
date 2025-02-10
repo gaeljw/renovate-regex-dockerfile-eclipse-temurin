@@ -19,12 +19,12 @@
         "datasourceTemplate": "docker"
       }
     ],
-    /*"packageRules": [
+    "packageRules": [
     {
       "matchDatasources": ["docker"],
       "matchDepNames": ["eclipse-temurin-variant"],
       "versioning": "ubuntu"
     }
-  ],*/
-  "ignorePresets": ["workarounds:javaLTSVersions"]
+  ]
+  //"ignorePresets": ["workarounds:javaLTSVersions"]
 }
