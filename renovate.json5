@@ -10,9 +10,9 @@
           "(^|/)Dockerfile$"
         ],
         "matchStrings": [
-          "FROM eclipse-temurin:(.*)-jre-(?<currentValue>.*)"
+          "FROM eclipse-temurin:(?<regularVersion>.*)-jre-(?<currentValue>.*)"
         ],
-        "extractVersionTemplate": "^(.*)-jre-(?<version>.*)$",
+        "extractVersionTemplate": "^{{{regularVersion}}}-jre-(?<version>.*)$",
         "depNameTemplate": "eclipse-temurin-variant",
         "packageNameTemplate": "eclipse-temurin",
         "versioningTemplate": "ubuntu",
