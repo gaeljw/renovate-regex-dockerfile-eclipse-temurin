@@ -10,12 +10,12 @@
           "(^|/)Dockerfile$"
         ],
         "matchStrings": [
-          "FROM eclipse-temurin:21.0.5_11-jre-(?<currentValue>.*)"
+          "FROM eclipse-temurin:(?<currentValue>.*)"
         ],
-        "extractVersionTemplate": "^21.0.5_11-jre-(?<version>.*)$",
+        "extractVersionTemplate": "^(?<version>.*)$",
         "depNameTemplate": "eclipse-temurin-variant",
         "packageNameTemplate": "eclipse-temurin",
-        "versioningTemplate": "ubuntu",
+        "versioningTemplate": "docker",
         "datasourceTemplate": "docker"
       }
     ],
@@ -23,7 +23,7 @@
     {
       "matchDatasources": ["docker"],
       "matchDepNames": ["eclipse-temurin-variant"],
-      "versioning": "ubuntu"
+      "versioning": "docker"
     }
   ]
 }
