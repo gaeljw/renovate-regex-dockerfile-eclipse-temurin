@@ -1,3 +1,3 @@
-FROM eclipse-temurin:21.0.5_11-jre-jammy
+FROM eclipse-temurin:21.0.13.1_2-jre-jammy
 
 RUN blabla
